@@ -1,0 +1,15 @@
+<div class="list-item">
+  <h4><a href="{{ .Permalink }}" class="clearfix">
+    {{ .Title }}
+</a></h4>
+  <time>
+    <small>
+    {{ with .Site.Params.DateForm }}
+    {{ $.Date.Format . }}
+    {{ else }}
+    {{ $.Date.Format "Mon, Jan 2, 2006" }}
+    {{ end }}
+    </small>
+  </time>
+  <div class="summary">{{ .Summary }}</div>
+</div>

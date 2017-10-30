@@ -1,0 +1,4 @@
+baseurl = "https://le.lamantin.cool/"
+languageCode = "fr"
+title = "Le Lamantin Cool"
+theme = "lamantin"

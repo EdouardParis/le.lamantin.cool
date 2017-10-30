@@ -1,0 +1,29 @@
+{{ partial "head.html" . }}
+<body class="nav-closed">
+  {{ partial "nav.html" . }}
+  <div class="home-template site-wrapper">
+    <header class="main-header post-head">
+      <nav class="main-nav overlay clearfix">
+        <a class="menu-button icon-menu" onclick="toggleMenu();" href="#"><span class="word">Menu</span></a>
+      </nav>
+      <div class="logo">
+        <h1>{{ .Site.Title }}</h1>
+      </div>
+    </header>
+    <main class="content" role="main">
+    <article class="post">
+      <header class="post-header">
+        <h1 class="post-title">{{ .Title }}</h1>
+        <section class="post-meta">
+          <time class="post-date" datetime=""></time>
+        </section>
+      </header>
+      <section class="post-content">
+        {{ .Content}}
+      </section>
+    </article>
+    </main>
+    {{ partial "footer.html" . }}
+  </div>
+</body>
+{{ partial "foot.html" .}}
