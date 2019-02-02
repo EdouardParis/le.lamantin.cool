@@ -1,0 +1,15 @@
+{{ partial "head" . }}
+<section>
+  {{ .Content }}
+  <hr>
+  {{ range $.Site.Data }}
+    <p>
+    {{ range .vinyles }}
+      <em>{{ .title }}</em>
+      - {{ .band }}
+      </br>
+    {{ end }}
+    </p>
+  {{ end }}
+</section>
+{{ partial "foot" . }}
